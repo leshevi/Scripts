@@ -9,7 +9,7 @@ grep -E "Failed password for" "$LOG_FILE" | grep -Eo '([0-9]{1,3}\.){3}[0-9]{1,3
 while read ip; do
   if ! iptables -L INPUT -v -n | grep -q "$ip"; then
     iptables -I INPUT -s "$ip" -j DROP
-    echo "$(date): Заблокирован IP $ip" > /var/log/ssh_ban.log
+    echo "$(date): Заблокирован IP $ip" >> /var/log/ssh_ban.log
   fi
 done
 OUTPUT=/var/log/ssh_ban.log
