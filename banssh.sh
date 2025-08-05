@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 
 LOG_FILE="/var/log/auth.log"
 LIMIT=50
