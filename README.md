@@ -10,4 +10,6 @@ Script banssh.sh blocks IP addresses trying to get to the server with an error
 
 Script ping.sh scans the network for available hosts
 
-du -h --max-depth=1 | sort -hr | head -n 10 
+du -h --max-depth=1 | sort -hr | head -n 10
+
+Script find_deleted.sh we are looking for processes that hold open deleted files.
